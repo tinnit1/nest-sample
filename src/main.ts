@@ -17,6 +17,8 @@ async function main() {
       }
     )
   )
-  await app.listen(3000);
+  await app.listen(process.env.PORT);
+  console.log(`App running ON PORT ${process.env.PORT}`);
+  
 }
 main();
